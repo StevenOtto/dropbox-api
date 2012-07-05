@@ -1,10 +1,10 @@
 DropboxApi::Application.routes.draw do
   get "popular/index"
-
   get "dropbox/index"
   
   match 'dropbox/authorize', :controller => 'dropbox', :action => 'authorize'
   match 'dropbox/upload', :controller => 'dropbox', :action => 'upload'
+  
   root :to => 'popular#index'
 
   # The priority is based upon order of creation:
