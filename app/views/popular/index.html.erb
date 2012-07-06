@@ -1,0 +1,22 @@
+<h1>Dribbble's 15 popular shots at the moment</h1>
+
+<table>
+<% @shots.each do |shot| %>
+	<tr>
+		<td class="shot_image">
+		<%= image_tag(shot.image_url, class: 'list_image') %>
+		</td>
+		
+		<td class="shot_description">
+			<b>Views:</b>
+				<%= shot.views_count %><br/>
+			<b>Comments:</b>
+				<%= shot.comments_count %> <br/>
+			<b>likes</b>
+				<%= shot.likes_count %> <br/>
+		</td>
+	</tr>
+	
+<% end %>
+
+</table>
