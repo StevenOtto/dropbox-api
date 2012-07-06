@@ -5,9 +5,7 @@ APP_SECRET = "5e6zvd0ydltrjz6"
 ACCESS_TYPE = :app_folder #The two valid values here are :app_folder and :dropbox
                           #The default is :app_folder, but your application might be
                           #set to have full :dropbox access.  Check your app at
-                          #https://www.dropbox.com/developers/apps
-
-class DropboxController < ApplicationController
+                          #https://www.dropbox.com/developers/appsclass DropboxController < ApplicationController
   def authorize
       if not params[:oauth_token] then
           dbsession = DropboxSession.new(APP_KEY, APP_SECRET)
