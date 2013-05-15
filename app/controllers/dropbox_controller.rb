@@ -1,7 +1,7 @@
 require 'dropbox_sdk'
 
-APP_KEY = "shy9bj5ptbvuahy"
-APP_SECRET = "5e6zvd0ydltrjz6"
+APP_KEY = "AddYourKey"
+APP_SECRET = "AddYourSectret"
 ACCESS_TYPE = :app_folder #The two valid values here are :app_folder and :dropbox
                           #The default is :app_folder, but your application might be
                           #set to have full :dropbox access.  Check your app at
